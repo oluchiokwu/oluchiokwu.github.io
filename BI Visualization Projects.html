@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BI Visualization Projects | Oluchi Okwu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "slate-text-muted": "#94a3b8",
+              "glass-surface": "rgba(255, 255, 255, 0.03)",
+              "glass-border": "rgba(255, 255, 255, 0.1)",
+              "background-dark": "#101322",
+              "slate-text-main": "#f1f5f9",
+              "background-light": "#f5f6f8",
+              "accent-glow": "rgba(37, 71, 244, 0.15)",
+              "primary-blue": "#2547f4"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "stack-gap": "2rem",
+              "margin-inline": "5rem",
+              "gutter": "1.5rem",
+              "container-max": "1440px",
+              "section-padding": "8rem"
+            },
+            fontFamily: {
+              "body-large": ["Manrope"],
+              "nav-link": ["Manrope"],
+              "label-caps": ["Manrope"],
+              "display-hero": ["Manrope"],
+              "h2-section": ["Manrope"]
+            },
+            fontSize: {
+              "body-large": ["1.25rem", {"lineHeight": "1.625", "letterSpacing": "0", "fontWeight": "300"}],
+              "nav-link": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.15em", "fontWeight": "600"}],
+              "label-caps": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.3em", "fontWeight": "700"}],
+              "display-hero": ["clamp(3rem, 10vw, 8rem)", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "900"}],
+              "h2-section": ["clamp(2rem, 5vw, 3rem)", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #101322;
+            color: #f1f5f9;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(37, 71, 244, 0.1) 0%, rgba(16, 19, 34, 1) 70%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card:hover {
+            background: #2547f4;
+            border-color: #2547f4;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-shadow {
+            box-shadow: 0 0 20px rgba(37, 71, 244, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body-large selection:bg-primary-blue selection:text-white">
+<header class="fixed top-0 w-full z-50 bg-glass-surface backdrop-blur-md border-b border-glass-border">
+<div class="flex justify-between items-center px-6 md:px-20 py-4 w-full max-w-container-max mx-auto">
+<a href="index.html" class="flex items-center gap-4" aria-label="Go to home page">
+<div class="w-10 h-10 rounded-lg bg-primary-blue flex items-center justify-center font-display-hero text-[1.25rem] text-slate-text-main glow-shadow">
+                    OO
+                </div>
+<span class="font-display-hero text-label-caps tracking-tighter text-slate-text-main hidden sm:block">OLUCHI OKWU</span>
+</a>
+<nav class="hidden md:flex gap-8">
+<a class="font-nav-link text-nav-link text-slate-text-main border-b-2 border-primary-blue hover:text-primary-blue transition-colors duration-300" href="BI Visualization Projects.html">PROJECTS</a>
+<a class="font-nav-link text-nav-link text-slate-text-muted hover:text-primary-blue transition-colors duration-300" href="index.html#about">ABOUT</a>
+<a class="font-nav-link text-nav-link text-slate-text-muted hover:text-primary-blue transition-colors duration-300" href="index.html#contact">CONTACT</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-text-main" data-icon="bar_chart">bar_chart</span>
+</div>
+</div>
+</header>
+<main class="pt-24 overflow-hidden">
+<section class="relative min-h-[618px] flex flex-col justify-center items-center text-center px-6 hero-gradient">
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary-blue/10 border border-primary-blue/20 text-primary-blue font-label-caps text-label-caps uppercase animate-pulse">
+<span class="w-2 h-2 rounded-full bg-primary-blue"></span>
+                    Dashboard Portfolio
+                </div>
+<h1 class="font-display-hero text-display-hero leading-none">
+                    BI &amp; <span class="text-primary-blue">Data Visualization</span>
+</h1>
+<p class="font-body-large text-body-large text-slate-text-muted max-w-2xl mx-auto">
+                    Interactive analytics dashboards built to turn raw metrics into clear actions for growth, performance tracking and faster executive decisions.
+                </p>
+<div class="pt-8">
+<a href="#featured-projects" class="bg-primary-blue text-slate-text-main px-10 py-4 rounded-xl font-label-caps text-label-caps glow-shadow hover:scale-105 active:scale-95 transition-all inline-flex items-center justify-center">
+                        EXPLORE DASHBOARDS
+                    </a>
+</div>
+</div>
+</section>
+<section class="px-6 md:px-20 py-section-padding max-w-container-max mx-auto" id="featured-projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-primary-blue">PORTFOLIO</span>
+<h2 class="font-h2-section text-h2-section">Featured Dashboards</h2>
+</div>
+<div class="h-[1px] flex-grow bg-glass-border mx-8 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card rounded-xl p-stack-gap group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-lg mb-6 aspect-video bg-slate-900">
+<img alt="Sales dashboard screenshot" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" src="Screenshot 2026-05-08 141759.png"/>
+</div>
+<h3 class="font-h2-section text-[1.5rem] mb-4 group-hover:text-slate-text-main">Sales 2020+ Revenue &amp; Trend Explorer</h3>
+<p class="font-body-large text-slate-text-muted text-[1rem] mb-6 flex-grow group-hover:text-slate-text-main/80">
+                        Interactive Power BI reporting for revenue trends, regional performance and product-level contribution from 2020 onward.
+                    </p>
+<div class="flex flex-wrap gap-2 mt-auto mb-4">
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">POWER BI</span>
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">DAX</span>
+</div>
+<a href="Sales 2019 and later (recovered).pbix" aria-label="Open Sales Power BI file" class="font-label-caps text-label-caps text-slate-text-main group-hover:text-white inline-flex items-center gap-2">
+                        EXPLORE PROJECT <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+</div>
+<div class="glass-card rounded-xl p-stack-gap group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-lg mb-6 aspect-video bg-slate-900">
+<img alt="Supply chain dashboard" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFS-Jpz9SxDQx5tXfd9l4vA8FfkD4qYFIu4JfkYwKjUlyJTtkP1gzyQAN3ay4KLePVgCn-_pAIJc8uJvWhhjUmZIGWTmxHsXkJqd4T18xflYhN6meovQimy1Hx8PRJ5gPLA9HL4HpdOtiZvYCRR7WZi2ry-Y3z6v0SEfHiYq1MeXiFAdq9_LWpurxHRphkt7O5G9vV8OXytifSu8GtmMNW3Jz6PMOFR57CXRsMJHplqgCEAJ0AaE_Z7ayLI6mdPbPCUgDuTe_MT_gs"/>
+</div>
+<h3 class="font-h2-section text-[1.5rem] mb-4 group-hover:text-slate-text-main">Supply Chain Logistics Optimizer</h3>
+<p class="font-body-large text-slate-text-muted text-[1rem] mb-6 flex-grow group-hover:text-slate-text-main/80">
+                        KPI dashboard focused on route efficiency, delivery lag and operational bottlenecks across distribution points.
+                    </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">TABLEAU</span>
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">GEO ANALYTICS</span>
+</div>
+</div>
+<div class="glass-card rounded-xl p-stack-gap group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-lg mb-6 aspect-video bg-slate-900">
+<img alt="Churn analytics dashboard" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHWAIol1HbXkZ_fsubUVlg9YAZqt6FB5eEfHxCkBb38Z8dOA6D_j_8yxLMTL9cahnB7kuxJT3aG3dFrYkGQEHh5Yo0jvdCzXwtFwJE3wVv1duHPQKFryUXQu9-7UD_obBgSuTcOOWb20dMw940BfJHrMiiGphJPZ5-H5_JtsyfcmV77mTGd20lRC9gArdOi2wVZdUObj9IEBN6vDiUynGdWb43L9rg3w78lnNxMpFyjQhgNVEyllJa9qNZev5ArRbHiH_J0_11mCH7"/>
+</div>
+<h3 class="font-h2-section text-[1.5rem] mb-4 group-hover:text-slate-text-main">Customer Churn Monitoring Board</h3>
+<p class="font-body-large text-slate-text-muted text-[1rem] mb-6 flex-grow group-hover:text-slate-text-main/80">
+                        Executive visibility layer showing churn risk segments, retention trends and intervention performance over time.
+                    </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">LOOKER</span>
+<span class="px-3 py-1 rounded-full bg-glass-border font-label-caps text-[0.6rem] text-slate-text-main group-hover:bg-white/20">PYTHON</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-glass-surface py-section-padding border-y border-glass-border">
+<div class="px-6 md:px-20 max-w-container-max mx-auto text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary-blue block mb-4">CAPABILITIES</span>
+<h2 class="font-h2-section text-h2-section">Visualization Engine</h2>
+</div>
+<div class="px-6 md:px-20 max-w-container-max mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="glass-card rounded-xl p-8 flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform cursor-default">
+<div class="w-12 h-12 bg-primary-blue/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-blue">monitoring</span>
+</div>
+<span class="font-label-caps text-label-caps">POWER BI</span>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform cursor-default">
+<div class="w-12 h-12 bg-primary-blue/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-blue">table_chart</span>
+</div>
+<span class="font-label-caps text-label-caps">TABLEAU</span>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform cursor-default">
+<div class="w-12 h-12 bg-primary-blue/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-blue">dashboard</span>
+</div>
+<span class="font-label-caps text-label-caps">EXCEL</span>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center gap-4 hover:-translate-y-2 transition-transform cursor-default">
+<div class="w-12 h-12 bg-primary-blue/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-blue">code</span>
+</div>
+<span class="font-label-caps text-label-caps">PYTHON</span>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 md:px-20 py-section-padding max-w-container-max mx-auto">
+<div class="mb-16">
+<span class="font-label-caps text-label-caps text-primary-blue block mb-4">METHODOLOGY</span>
+<h2 class="font-h2-section text-h2-section">Dashboard Delivery Workflow</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-gap relative">
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-primary-blue/20 hidden md:block z-0"></div>
+<div class="relative z-10 flex flex-col items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-background-dark border-2 border-primary-blue flex items-center justify-center font-h2-section text-primary-blue text-[1.25rem] glow-shadow">1</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-slate-text-main mb-2">Data Preparation</h4>
+<p class="font-body-large text-[0.875rem] text-slate-text-muted">Modeling and cleaning source data for consistent metrics and reliable reporting.</p>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-background-dark border-2 border-primary-blue flex items-center justify-center font-h2-section text-primary-blue text-[1.25rem] glow-shadow">2</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-slate-text-main mb-2">Metric Design</h4>
+<p class="font-body-large text-[0.875rem] text-slate-text-muted">Defining KPIs and business logic with reusable calculations and clear definitions.</p>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-background-dark border-2 border-primary-blue flex items-center justify-center font-h2-section text-primary-blue text-[1.25rem] glow-shadow">3</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-slate-text-main mb-2">Visual Build</h4>
+<p class="font-body-large text-[0.875rem] text-slate-text-muted">Crafting intuitive dashboards with purposeful layouts, filters and drill-through paths.</p>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-blue border-2 border-primary-blue flex items-center justify-center font-h2-section text-slate-text-main text-[1.25rem] glow-shadow">4</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-slate-text-main mb-2">Stakeholder Rollout</h4>
+<p class="font-body-large text-[0.875rem] text-slate-text-muted">Publishing, feedback iteration and governance setup for sustainable decision workflows.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-section-padding border-t border-glass-border bg-background-dark">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-20 gap-stack-gap max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-h2-section text-label-caps text-slate-text-main">OLUCHI OKWU</span>
+<span class="font-label-caps text-label-caps text-slate-text-muted">&copy; 2026 Oluchi Okwu.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-slate-text-muted hover:text-primary-blue transition-all" href="#" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+<a class="font-label-caps text-label-caps text-slate-text-muted hover:text-primary-blue transition-all" href="https://github.com/oluchiokwu" target="_blank" rel="noreferrer noopener">GitHub</a>
+<a class="font-label-caps text-label-caps text-slate-text-muted hover:text-primary-blue transition-all" href="#" target="_blank" rel="noreferrer noopener">Twitter</a>
+<a class="font-label-caps text-label-caps text-slate-text-muted hover:text-primary-blue transition-all" href="index.html#contact">Contact</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
